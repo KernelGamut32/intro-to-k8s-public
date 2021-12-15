@@ -59,12 +59,12 @@ spec:
         - name: MYSQL_USERNAME
           valueFrom:
             configMapKeyRef:              
-              name: toyshop-config
+              name: inventory-config
               key: MYSQL_USERNAME
         - name: MYSQL_SERVICE_HOST
           valueFrom:
             configMapKeyRef:              
-              name: toyshop-config
+              name: inventory-config
               key: MYSQL_SERVICE_HOST
         - name: MYSQL_PASSWORD
           valueFrom:
@@ -74,7 +74,7 @@ spec:
         - name: MYSQL_DATABASE
           valueFrom:
             configMapKeyRef:              
-              name: toyshop-config
+              name: inventory-config
               key: MYSQL_DATABASE
         ports:
         - containerPort: 5100
